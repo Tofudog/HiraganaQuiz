@@ -1,0 +1,104 @@
+<Quiz>
+
+    GridLayout:
+        rows: 5
+        cols: 3
+        size: root.width, root.height
+        
+        ### row 1
+        Label:
+            text:""
+        Label:
+            markup:True
+            text:"[u]Welcome to the Hiragana Quiz![/u]"
+            font_size: 25
+        Label:
+            text:""
+        ### end row 1
+        
+        ### row 2
+        Label:
+            text:""
+        Image:
+            id: letter_img
+            source: 'Hiragana//a.jpg'
+        Label:
+            id: scoreTracker
+            text: "0"
+        ### end row 2
+        
+        ### row 3
+        Button:
+            id: startButton
+            text: "Start"
+            font_size: 14
+            background_color: 'pink'
+            color: 'white' 
+            size_hint_x: None
+            size: 100, 100
+            on_press: root.startQuiz()
+        BoxLayout:
+            orientation: 'horizontal'
+            Button: 
+                id: response1
+                text: 'a'
+                font_size: 18
+                background_color: '#FFFFFF'
+                color: 'red'
+                size_hint: (0.3, 0.2)
+                on_press: root.setAnswer(self.text)
+            Button: 
+                id: response2
+                text: 'e'
+                font_size: 18
+                background_color: '#FFFFFF'
+                color: 'red'
+                size_hint: (0.3, 0.2)
+                on_press: root.setAnswer(self.text)
+            Button: 
+                id: response3
+                text: 'i'
+                font_size: 18
+                background_color: '#FFFFFF'
+                color: 'red'
+                size_hint: (0.3, 0.2)
+                on_press: root.setAnswer(self.text)
+            Button: 
+                id: response4
+                text: 'o'
+                font_size: 18
+                background_color: '#FFFFFF'
+                color: 'red'
+                size_hint: (0.3, 0.2)
+                on_press: root.setAnswer(self.text)
+        Button:
+            text: 'next'
+            on_press: root.clickNext()
+        ### end row 3
+        
+        ### row 4
+        Button:
+            text: "Dropdown"
+        Label:
+            text: ""
+        Label:
+            text: ""
+        ### end row 4
+        
+        ### row 5
+        Label:
+            text: ''  
+        Label:
+            text: ''
+        Label:
+            text: 'Timer'
+        ### end row 5
+            
+            
+            
+            
+            
+            
+            
+            
+            
