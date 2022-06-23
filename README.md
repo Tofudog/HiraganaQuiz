@@ -7,4 +7,7 @@ Steps to play:
 1. Download and install Kivy. You can either use the Anaconda Navigator or follow these instructions: https://kivy.org/doc/stable/gettingstarted/installation.html
 2. Click on the green Code dropdown button on this github repo. and select download as a zip file
 3. Extract all the content of the zip file into your working directory.
-4. 
+4. Open a virtual environment that already has kivy installed, or enter an IDE.
+5. In your platform, run hiragana.py and enjoy your app!
+
+V. 1.1
